@@ -1,0 +1,12 @@
+{
+  "format": "car-link-fuel-prices",
+  "version": 1,
+  "updated_by": "Mars (PRD research), 06/11/2026",
+  "note": "UAE retail prices are set monthly by the UAE Fuel Price Committee and announced through WAM. Figures checked against four outlets that agree.",
+  "prices": [
+    {"country": "AE", "month": "2026-11", "grade": "SUPER_98", "price": 4.16, "currency": "AED", "source": "Gulf News, from the WAM announcement", "source_url": "https://gulfnews.com/business/energy/uae-petrol-diesel-prices-for-november-2026-announced-1.500730427", "published": "2026-10-31"},
+    {"country": "AE", "month": "2026-11", "grade": "SPECIAL_95", "price": 4.04, "currency": "AED", "source": "Gulf News, from the WAM announcement", "source_url": "https://gulfnews.com/business/energy/uae-petrol-diesel-prices-for-november-2026-announced-1.500730427", "published": "2026-10-31"},
+    {"country": "AE", "month": "2026-11", "grade": "E_PLUS_91", "price": 3.97, "currency": "AED", "source": "Gulf News, from the WAM announcement", "source_url": "https://gulfnews.com/business/energy/uae-petrol-diesel-prices-for-november-2026-announced-1.500730427", "published": "2026-10-31"},
+    {"country": "AE", "month": "2026-11", "grade": "DIESEL", "price": 4.75, "currency": "AED", "source": "Gulf News, from the WAM announcement", "source_url": "https://gulfnews.com/business/energy/uae-petrol-diesel-prices-for-november-2026-announced-1.500730427", "published": "2026-10-31"}
+  ]
+}

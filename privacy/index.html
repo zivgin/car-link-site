@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Link privacy policy</title>
+<style>
+:root { --bg: #f7f9fb; --fg: #1b232a; --muted: #5b6770; --line: #d8dee3; --accent: #0b6e99; }
+@media (prefers-color-scheme: dark) { :root { --bg: #101417; --fg: #e6ebef; --muted: #9aa7b0; --line: #2a3238; --accent: #5cc1e8; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--fg); }
+code { font-size: 14px; }
+.t { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Car Link privacy policy</h1>
+<p>Effective date: 7 November 2026</p>
+<p>Car Link ("the app") is made by Ziv Ginsberg, an individual developer. This page explains what the app does with your data. Short version: everything stays on your phone unless you turn on a feature that needs the internet, and there is no account, no advertising and no analytics.</p>
+<h2>What the app does</h2>
+<p>Car Link reads your car through an OBD2 adapter (Bluetooth or Wi-Fi) and shows the readings, fault codes and your drives on your phone. Trips, readings, routes, recordings and settings are stored only on your phone.</p>
+<h2>What leaves your phone</h2>
+<p>Each item below is a separate feature. Nothing else is sent anywhere.</p>
+<div class="t"><table><thead><tr><th>What is sent</th><th>To whom</th><th>When</th><th>How to stop it</th></tr></thead><tbody><tr><td>The first 10 characters of your car's VIN (maker, model, model year and plant; never the serial number)</td><td>NHTSA vPIC, a free US government vehicle database</td><td>Once per car, to name your car's model. On by default</td><td>Settings: turn off "Identify my car online"</td></tr><tr><td>The map area you are looking at</td><td>OpenFreeMap (map tiles)</td><td>Only while a trip map is on screen</td><td>Do not open trip maps</td></tr><tr><td>Your approximate location (rounded to about 1 km)</td><td>Open-Meteo, a free weather service</td><td>About every 30 minutes while Pip is on screen and the app is open, only if you allowed location access. Uses the last known location, never a new fix. Not stored, by the app or with the weather. On by default</td><td>Settings: turn off "Weather on Pip" (or "Show Pip")</td></tr><tr><td>The start and end coordinates of a trip</td><td>OpenStreetMap Nominatim (turns coordinates into place names)</td><td>After a trip, only if you turned it on. Off by default</td><td>Settings: turn off "Name my start and end places"</td></tr><tr><td>Nothing (a download only)</td><td>This project's own web page (a public fuel price table)</td><td>At most once a day, only if you turned it on. Off by default</td><td>Settings: turn off "Update fuel prices online"</td></tr><tr><td>The car readings shown on screen, your car's full VIN, and a summary of your last trip (start and end times, distance)</td><td>A server you set up yourself (MQTT, for example Home Assistant)</td><td>Only if you configure a server. Off by default</td><td>Settings: turn off the server</td></tr></tbody></table></div>
+<p>The services above receive your phone's internet address (IP address) as part of any internet request. Their own privacy policies apply to what they do with it. We do not run any server that receives your data.</p>
+<h2>What is never collected</h2>
+<ul><li>No account and no sign in.</li><li>No advertising, no advertising ID.</li><li>No analytics or tracking SDK, no crash reporting SDK.</li><li>Google Play may collect crash and performance statistics for apps it distributes; these are aggregated by Google and shown to the developer without identifying you.</li></ul>
+<h2>Location</h2>
+<p>If "Record my route" is on and you allow location access, the app records your route while a trip is running and the app is in use (it never asks for background location). Routes are stored on your phone and shown on your own trip maps. They are sent nowhere, except the start and end points if you turned on "Name my start and end places" (see above). "Weather on Pip" sends only an approximate point (about 1 km) to Open-Meteo to show the local weather on the mascot; the app does not store it.</p>
+<h2>Bluetooth</h2>
+<p>The app uses Bluetooth only to talk to your OBD2 adapter. It scans for devices only when you tap Scan and it does not use Bluetooth to find your location.</p>
+<h2>Sharing and exports</h2>
+<p>You can share a diagnostics report, a CSV or a GeoJSON file, or a trip story. These are created only when you tap share, and go only where you send them. Diagnostics reports never include passwords or server addresses, and they mask the VIN serial number unless you turn off "Hide VIN and identifiers" before sharing.</p>
+<h2>Debug log</h2>
+<p>The app keeps a diagnostic log on your phone (on by default, Diagnostics: turn off "Keep a debug log"). It holds connection events and trip timings and distances, never passwords, server addresses or your VIN. It leaves the phone only if you share it.</p>
+<h2>Your control and deletion</h2>
+<ul><li>Delete a trip ("Delete this trip") or all trips ("Delete all trips"), or use "Forget this car" to remove the saved car.</li><li>Uninstalling the app deletes all of its data from your phone.</li><li>The app does not back up its data to the cloud.</li><li>Because we hold no data about you, there is nothing for us to delete or hand over; if you have a question, contact us below.</li></ul>
+<h2>Children</h2>
+<p>The app is not directed at children under 13.</p>
+<h2>Changes</h2>
+<p>If the app starts sending anything new, this page and the in-app settings will say so before it happens. The effective date at the top changes with every update.</p>
+<h2>Contact</h2>
+<p>zivgin@gmail.com</p>
+<footer>Generated from docs/privacy-policy.md.</footer>
+</main>
+</body>
+</html>
